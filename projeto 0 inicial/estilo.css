@@ -1,0 +1,18 @@
+h1 {
+    color: palevioletred;
+    font-size: 34px;
+}
+
+a {
+    color: palevioletred;
+    font-size: 16px;
+}
+
+img {
+    width: 500px;
+}
+
+li {
+    font-weight: bold;
+    color: palevioletred;
+}

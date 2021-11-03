@@ -1,0 +1,26 @@
+3 formas de inserção de CSS no HTML
+- CSS inline = insere a estilização diretamento no elemento a ser estilizado.
+    Ex.: 
+    <h1 style="color:aqua;font-size:26px;">O Reino Encantado das Fadas</h1>
+
+- CSS interno = o CSS é colocado em um único local na página e fazer referência aos itens a seres estilizados.
+    Recomendação: por o código CSS no HEAD.
+    Ex.: 
+    <style>
+       h1 {
+            color: palevioletred;
+            font-size: 34px;
+        }
+
+        a {
+            color: palevioletred;
+            font-size: 16px;
+        }
+    </style>
+
+- CSS externo = é criado um outro arquivo com extensão .css.
+                fazer o link do arquivo no HEAD.
+                rel = atributo; "stylesheet" = dizer que o arquivo importado será responsável pela estilização da página.
+                href = para referenciar; enome do arquivo a ser importado.css
+    Ex.: 
+    <link rel="stylesheet" href="estilo.css"/>  (linkagem com o arquivo externo)
