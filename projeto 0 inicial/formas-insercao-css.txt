@@ -24,3 +24,27 @@
                 href = para referenciar; enome do arquivo a ser importado.css
     Ex.: 
     <link rel="stylesheet" href="estilo.css"/>  (linkagem com o arquivo externo)
+
+    Formas de selecionar com css, além do uso da tag no arquivo.
+    id : seleciona um item especifico. o id deve ser unico.
+    Ex. 1: De forma separada
+    No HTML 
+        <h1 id="titulo">O Reino Encantado das Fadas</h1>
+    No CSS 
+        #titulo {
+        color: rgb(214, 72, 119);
+        font-size: 34px;
+        }
+    class : possibilidade de selecionar vários elementos.
+    No HTML
+        <p class="texto">Era uma vez...</p>
+    No CSS
+        .texto {
+        color:blue;
+        }
+    Ex.2: Juntos
+        .texto,
+        #lista {
+        color:rgb(20, 140, 238);
+        }
+        

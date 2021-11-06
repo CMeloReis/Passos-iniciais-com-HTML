@@ -1,8 +1,10 @@
-h1 {
-    color: palevioletred;
+/* ID_DO_ELEMENTO */
+#titulo {
+    color: rgb(214, 72, 119);
     font-size: 34px;
 }
 
+/* NOME_DO_ELEMENTO */
 a {
     color: palevioletred;
     font-size: 16px;
@@ -12,7 +14,19 @@ img {
     width: 500px;
 }
 
-li {
+/* ELEMENTO_DENTRO_DE_OUTRO_ELEMENTO (usa-se espaço e não vírgula) */
+ul li{ /* vai na tag ul e procura a tag li para aplicar o efeito */
     font-weight: bold;
     color: palevioletred;
+}
+
+/* ELEMENTO, OUTRO_ELEMENTO */
+.texto, /* itens com mesma formatação poderm ser selecionados juntos, independentes de serem do tipo id ou class */
+#lista {
+    color:rgb(20, 140, 238);
+}
+
+/* CLASS_DO_ELEMENTO */
+.texto {
+    font-size: 16px;
 }
