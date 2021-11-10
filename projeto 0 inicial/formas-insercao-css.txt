@@ -1,9 +1,10 @@
-3 formas de inserção de CSS no HTML
-- CSS inline = insere a estilização diretamento no elemento a ser estilizado.
+(1) 3 formas de inserção de CSS no HTML
+
+(1.1) CSS inline = insere a estilização diretamento no elemento a ser estilizado.
     Ex.: 
     <h1 style="color:aqua;font-size:26px;">O Reino Encantado das Fadas</h1>
 
-- CSS interno = o CSS é colocado em um único local na página e fazer referência aos itens a seres estilizados.
+(1.2) CSS interno = o CSS é colocado em um único local na página e fazer referência aos itens a seres estilizados.
     Recomendação: por o código CSS no HEAD.
     Ex.: 
     <style>
@@ -18,15 +19,17 @@
         }
     </style>
 
-- CSS externo = é criado um outro arquivo com extensão .css.
+(1.3) CSS externo = é criado um outro arquivo com extensão .css.
                 fazer o link do arquivo no HEAD.
                 rel = atributo; "stylesheet" = dizer que o arquivo importado será responsável pela estilização da página.
                 href = para referenciar; enome do arquivo a ser importado.css
     Ex.: 
     <link rel="stylesheet" href="estilo.css"/>  (linkagem com o arquivo externo)
 
-    Formas de selecionar com css, além do uso da tag no arquivo.
-    id : seleciona um item especifico. o id deve ser unico.
+-----------------------------------------------------------------------------------
+(2) Formas de selecionar com css, além do uso da tag no arquivo.
+
+(2.1) id : seleciona um item especifico. o id deve ser unico.
     Ex. 1: De forma separada
     No HTML 
         <h1 id="titulo">O Reino Encantado das Fadas</h1>
@@ -35,7 +38,8 @@
         color: rgb(214, 72, 119);
         font-size: 34px;
         }
-    class : possibilidade de selecionar vários elementos.
+
+(2.2) class : possibilidade de selecionar vários elementos.
     No HTML
         <p class="texto">Era uma vez...</p>
     No CSS
@@ -47,4 +51,34 @@
         #lista {
         color:rgb(20, 140, 238);
         }
-        
+-----------------------------------------------------------------------------
+(3) Cores
+
+(3.1) Pelo nome :
+    color: red;
+
+(3.2) Pela proporção da mistura das cores vermelha, verde e azul (código RGB):
+        Variação RGB de 0 a 255 (bytes)
+        Preto rgb (0, 0, 0) ; Branco rgb(255, 255, 255)
+    color: rgb(255, 102, 153);
+
+(3.3) Pelo código hexadecimal:
+        #123456 (# seis caracteres) Variação de '0' a '9' e depois de 'a' a 'f'
+        1 e 2 = proporção do vermelho
+        3 e 4 = proporção do verde
+        5 e 6 = proporção do azul
+    color: #762cd7;
+----------------------------------------------------------------------------
+(4) Bordas
+p {
+    border: largura tipo cor;
+    border: 3px solid #ff69b7;
+}
+    Tipos:
+        solid = sólido / linha reta
+        dotted = pontilhado
+        dashed = tracejado
+        double = duas retas
+        groove
+        inset
+        outset

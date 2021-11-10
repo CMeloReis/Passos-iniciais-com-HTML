@@ -1,23 +1,31 @@
 /* ID_DO_ELEMENTO */
 #titulo {
-    color: rgb(214, 72, 119);
+    color: rgb(255, 102, 153);
+    
     font-size: 34px;
+    border: 3px solid rgb(255, 105, 183);
+    border-radius: 5px; /*arendondar a borda  - especificar o raio da borda*/
+    background: linear-gradient(to right, aqua, rgb(230, 115, 210));
+    text-align: center; /* centralização */
 }
 
 /* NOME_DO_ELEMENTO */
 a {
-    color: palevioletred;
+    color: rgb(255, 105, 183);
     font-size: 16px;
+    background-color: aqua;
+
 }
 
 img {
     width: 500px;
+    border-radius: 50px;
 }
 
 /* ELEMENTO_DENTRO_DE_OUTRO_ELEMENTO (usa-se espaço e não vírgula) */
 ul li{ /* vai na tag ul e procura a tag li para aplicar o efeito */
     font-weight: bold;
-    color: palevioletred;
+    color: #7b32da;
 }
 
 /* ELEMENTO, OUTRO_ELEMENTO */
@@ -29,4 +37,16 @@ ul li{ /* vai na tag ul e procura a tag li para aplicar o efeito */
 /* CLASS_DO_ELEMENTO */
 .texto {
     font-size: 16px;
+}
+
+#lista {
+    border-bottom: 3px dotted #d87093; /* border-top; border-left; border-right */
+}
+
+div {
+    background-color: rgb(255, 105, 183);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /* metade para formar um círculo */
+    border: 5px solid rgb(124, 209, 228);
 }
