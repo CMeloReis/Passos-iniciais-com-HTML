@@ -1,0 +1,37 @@
+* { /* propriedade padrão de projeto*/
+    /* '*' aplicação à todos os elementos da tela */
+    /*box-sizing: content-box;*/ 
+                            /* padrão - tamanho do elemento definido pelo seu contéudo */
+                            /* tamanho do conteúdo; não inclui padding ou border */
+    box-sizing: border-box; 
+                            /* tamanho inclui padding e border; além do conteúdo */
+}
+
+body { /* propriedade padrão de projeto*/
+    margin: 0%;
+}
+
+.tela-inicial {
+    margin: 3px; /* espaçamento externo à borda; de um elemento a outro */
+    /*os px podem ser de tamanhos diferentes, no sentindo horário */
+    border: 5px solid #f00;
+    border-radius: 10px;
+    padding: 10px; /* espaçamento interno à borda; no próprio elemento */
+    /*os px podem ser de tamanhos diferentes, no sentindo horário */
+    width: 800px;
+    height: 100px;
+    background-color: #000;
+    background: linear-gradient(to right, #000, rgb(156, 15, 15));
+    color: #f00;
+    font-size: 50px;
+    text-align: center;
+}
+
+#logo {
+    min-width: 200px;
+    max-width: 1000px;
+    width: 50%; 
+    /* pixel e porcentagem (da largura do espaço disponível para a imagem) são os mais utilizados */
+    border-radius: 10px;
+    margin: 3px;
+}
