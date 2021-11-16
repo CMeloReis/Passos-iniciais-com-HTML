@@ -45,3 +45,21 @@ body {
   background-color: #000;
   color: rgb(184, 12, 12);
 }
+
+#cartaz {
+  width: 300px;
+}
+
+.link {
+  color: #da1515;
+  background-color: black;
+  width: 45%;
+  text-align: center;
+  margin: 15px;
+}
+
+/* aplicação apenas quando o estado estiver ativo - mouse encima do elemento */
+.link:hover {
+  color: #000;
+  background-color: #da1515;
+}
