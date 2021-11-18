@@ -9,8 +9,9 @@
 }
 
 body {
-  /* propriedade padrão de projeto*/
+  /* propriedade padrão de projeto = margin: 0%;*/
   margin: 0%;
+  padding: 20px;
 }
 
 .tela-inicial {
@@ -35,11 +36,11 @@ body {
   width: 50%;
   /* pixel e porcentagem (da largura do espaço disponível para a imagem) são os mais utilizados */
   border-radius: 10px;
-  margin: 3px 12px 25px;
+  margin: 3px 12px 15px;
 }
 
 .pagina-elenco {
-  margin: 120px;
+  margin: 260px;
   border-radius: 10px;
   padding: 15px;
   background-color: #000;
@@ -51,15 +52,14 @@ body {
 }
 
 .link {
-  color: #da1515;
-  background-color: black;
-  width: 45%;
+  color: #000;
+  width: 50%;
   text-align: center;
   margin: 15px;
+  font-weight: bold;
 }
 
 /* aplicação apenas quando o estado estiver ativo - mouse encima do elemento */
 .link:hover {
-  color: #000;
-  background-color: #da1515;
+  color: #da1515;
 }
