@@ -31,3 +31,42 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+table {
+  width: 600px;
+}
+
+/* th,
+td {
+  border: 1px solid black;
+} */
+
+table thead {
+  background-color: rgb(189, 116, 204);
+}
+
+/* th {
+  font-weight: normal;
+} */
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: rgb(211, 113, 182);
+}
+
+/* tbody td {
+  border-bottom: 1px solid rgb(189, 116, 204);
+} */
+
+tbody tr:nth-child(even) {
+  background-color: rgb(230, 195, 236);
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: rgb(211, 113, 182);
+}
