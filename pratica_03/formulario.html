@@ -17,9 +17,9 @@
         POST - envio interno. não visualiza as informações na URL da página -->
     <form action="informacoes/login.html" method="GET">
 
-        Usuário <input type="text" name="usuario" value="" placeholder="Digite seu usuário"> <br /> <br />
-        Email <input type="email" name="email" value="" placeholder="Digite seu e-mail"> <br /> <br />
-        Senha <input type="password" name="senha" value="" placeholder="Digite sua senha"> <br /> <br />
+        Usuário <input type="text" id="user" required name="usuario" value="" placeholder="Digite seu usuário"> <br /> <br />
+        Email <input type="email" id="email" required name="email" value="@email.com" placeholder="Digite seu e-mail"> <br /> <br />
+        Senha <input type="password" id="password" required name="senha" value="" placeholder="Digite sua senha"> <br /> <br />
         <input type="checkbox" name="senha" value="salva"> Salvar senha <br /> <br />
         <input type="radio" name="aceite" value="sim" /> SIM
         <input type="radio" name="aceite" value="nao" /> NÃO <br /> <br />
@@ -27,8 +27,20 @@
 
     </form>
 
-    <h2>Área de Login</h2>
-    <form>
+    <h2>Área de Login </h2>
+    <form action="informacoes/login.html" method="GET">
+        <input type="color" name="cor" />
+        <input type="date" name="data" />
+        <input type="time" name="hora" />
+        <input type="datetime-local" name="data-hora" />
+        <input type="month" name="mes" />
+        <input type="week" name="semana" />
+        <input type="number" name="numero" placeholder="numeros" />
+        <input type="range" name="range" />
+        <input type="search" name="search" placeholder="Buscar" />
+        <input type="tel" name="telefone" placeholder="Telefone" />
+        <input type="url" name="url" placeholder="url" />
+        <input type="submit" />
 
     </form>
 </body>
