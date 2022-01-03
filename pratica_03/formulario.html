@@ -17,9 +17,12 @@
         POST - envio interno. não visualiza as informações na URL da página -->
     <form action="informacoes/login.html" method="post">
 
-        Usuário <input type="text" id="user" required name="usuario" value="" placeholder="Digite seu usuário" />
-        Email <input type="email" id="email" required name="email" value="@email.com" placeholder="Digite seu e-mail" />
-        Senha <input type="password" id="password" required name="senha" value="" placeholder="Digite sua senha" />
+        <label>Usuário</label> <input type="text" id="user" required name="usuario" value=""
+            placeholder="Digite seu usuário" />
+        <label>Email</label> <input type="email" id="email" required name="email" value="@email.com"
+            placeholder="Digite seu e-mail" />
+        <label>Senha</label> <input type="password" id="password" required name="senha" value=""
+            placeholder="Digite sua senha" />
         <br /> <br />
         <input type="checkbox" name="senha" value="salva" /> Salvar senha
         <input type="radio" name="aceite" value="sim" /> SIM
@@ -60,6 +63,27 @@
             <!--opção selecionada onde carrega a página  -->
         </select>
         <input type="submit" />
+        <br />
+        <textarea name="descricao" id=""></textarea>
+        <button>Cadastrar</button> <!-- pode ser usada fora de formulário. usar em JS -->
+        <br />
+
+        <label>Nome Completo:<br />
+            <input type="text" name="nome" />
+        </label>
+
+        <button>Cadastrar</button>
+
+        <br /> <br />
+
+        <input type="checkbox" id="teste" />
+        <label for="teste">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quae!</label>
+        <br />
+        <!-- por id e for ou colocar o unput dentro do label -->
+        <label>
+            <input type="checkbox" name="nome" />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quae!
+        </label>
 
     </form>
 
