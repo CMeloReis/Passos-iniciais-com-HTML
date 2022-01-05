@@ -42,6 +42,63 @@
 
         <button>Cadastrar</button>
     </form>
+    <br />
+    <form action="informacoes/login.html" method="post" enctype="multipart/form-data">
+        <!-- colocar sempre que for enviar um arquivo -> enctype="multipart/form-data", sob pena de não recebimento do arquivo pelo servidor -->
+        <!-- arquivos são enviados com método post, normalmente -->
+        <input type="hidden" name="country" value="BR" />
+
+        <fieldset>
+            <!-- conjunto de campos -->
+            <legend>Dados Pessoais</legend>
+            <label>
+                Foto: <br />
+                <input type="file" name="photo" accept="image/*" /><!-- aceita qualquer tipo de imagem -->
+            </label>
+            <label>
+                Primeiro Nome: <br />
+                <input type="text" name="name" required minlength="2" maxlength="15" />
+            </label>
+            <label>
+                Sobrenome: <br />
+                <input type="text" name="lastname" />
+            </label>
+            <label>
+                E-mail: <br />
+                <input type="text" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+                    title="endereço de email" />
+                <!--atributo pattern="" padrão desejado para o campo -->
+            </label>
+            <label>
+                Data de Nascimento: <br />
+                <input type="date" name="birthdate" min="2022-01-05" max="2023-02-17" />
+            </label>
+            <label>
+                Idade: <br />
+                <input type="number" name="age" min="16" max="120" />
+                <!-- em números pode usa o step="2", para ir saltando -->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da Empresa: <br />
+                <input type="text" name="companyname" />
+            </label>
+            <label>
+                Cargo na Empresa: <br />
+                <input type="text" name="companyjobtitle" />
+            </label>
+            <label>
+                Currículo: <br />
+                <input type="file" name="photo" accept="application/pdf" /><!-- aceita arquivos em pdf -->
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" />
+
+    </form>
 
 </body>
 
