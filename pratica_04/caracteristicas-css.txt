@@ -1,3 +1,4 @@
+CSS
 /* -------------------------------------------HERANÇA------------------------------------------------- */
 
 /* HERANÇA:Quando não é especificado nada em uma div ela vai obter o estilo da herança da qual faz parte. */
