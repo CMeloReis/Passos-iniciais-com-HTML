@@ -1,0 +1,41 @@
+/* HERANÇA:Quando não é especificado nada em uma div ela vai obter o estilo da herança da qual faz parte. */
+
+body {
+  margin: 0;
+  color: palevioletred; /* herdado pelos elementos dentro do body, desde que não tenha propriedade mais específico */
+}
+
+.container {
+  /* tudo dentro do elemento herdará a mesma propriedade como herança */
+  width: calc(100%-20px);
+  height: 200px;
+  background-color: #ccc;
+
+  color: #f00;
+  font-size: 30px;
+  border: 3px solid #0f0; /* nem todas as propriedades são herdadas */
+  /* geralmente, as propriedades herdadas relacionam-se ao texto */
+}
+
+.container strong {
+  color: #00f; /* se não tiver, a propriedade strong herdará a cor dada do container */
+  border: 3px solid #000;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* ESPECIFICIDADE: quanto mais específico for, mais forte será a filtragem  */
+
+div {
+  /* - específico */
+  color:goldenrod;
+}
+/* +/- específico */
+.container {
+  color: royalblue;
+}
+body .container {
+  /* + específico */
+  color: purple;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
