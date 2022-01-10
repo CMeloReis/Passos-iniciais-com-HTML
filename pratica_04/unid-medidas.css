@@ -2,30 +2,75 @@
 
 /* unidades de medidas absolutas: não sofrem interferência de elementos do site ou da própria estrutura feita */
 
-body {
-  margin: 0;
-}
-
 .pixels {
-  width: 300px; /* a unidade píxel (px) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
-  height: 300px;
+  width: 100px; /* a unidade píxel (px) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
+  height: 100px;
   background-color: palevioletred;
 }
 
 .points {
-  width: 300pt; /* a unidade points (pt) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
-  height: 300pt; /* mais usada para fontes. similaridade maior do pt do monitor e do pt do papel para a impressão */
+  width: 100pt; /* a unidade points (pt) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
+  height: 100pt; /* mais usada para fontes. similaridade maior do pt do monitor e do pt do papel para a impressão */
   background-color: purple;
 }
 
 .polegadas {
-  width: 3in; /* a unidade polegada (in) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
-  height: 3in;
+  width: 1in; /* a unidade polegada (in) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
+  height: 1in;
   background-color: blue;
 }
 
 .centimentos {
-  width: 5cm; /* a unidade centimento/milimetro (cm/mm) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
-  height: 5cm;
+  width: 4cm; /* a unidade centimento/milimetro (cm/mm) será a dada independente do HTML ou do que se ponha ao redor. a unidade não se comunica com outras coisas.*/
+  height: 4cm;
   background-color: brown;
+}
+
+/* unidades de medidas relativas à fonte: Unidades que vão ser alteradas de acordo com o que têm de elementos na página.*/
+
+body {
+  font-size: 10px;
+}
+h1 {
+  font-size: 3em;
+}
+.box {
+  font-size: 2em; /* 2 * 10px = 20 */
+}
+
+.box-interno {
+  width: 10em; /* unidade depende do font-size do elemento pai. dado font-size: 20px; 1em = 20px; 2em = 40px */
+  /* efeito cascata. depende do font-size do elemento superior imediato 20 * 10 = 200 */
+  height: 10em;
+  background-color: blueviolet;
+}
+
+html {
+  font-size: 10px; /* alterando na raiz, os outros rem são alterados de forma proporcional */
+}
+.rem {
+  font-size: 2rem;
+}
+
+.box2 {
+  font-size: 2rem; /* 2 * 10 = 20 */ /* bom para responsividade. proporcionalidade. */
+}
+
+.box-interno2 {
+  width: 10rem; /*unidade rem depende do font-size do elemento raiz.  */ /* 10 * 10 = 100 */
+  height: 10rem;
+  background-color: palevioletred;
+}
+
+.box3 {
+  font-size: 16px;
+  width: 50%; /* do espaço disponível */
+  height: 200px;
+  background-color: rebeccapurple;
+}
+
+.box-interno3 {
+  width: 50%; /* do espaço disponível */
+  height: 50%;
+  background-color: palevioletred;
 }
