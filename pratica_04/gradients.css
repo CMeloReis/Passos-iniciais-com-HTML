@@ -1,0 +1,66 @@
+/*Fonte da prática: https://www.w3schools.com/css/css3_gradients.asp */
+
+.box1 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(pink, purple);
+}
+
+.box2 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to right, pink, purple);
+}
+
+.box3 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to bottom right, pink, purple);
+}
+
+.box4 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(180deg, pink, purple);
+}
+
+.box5 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(palevioletred, pink, purple);
+}
+
+.box6 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+.box7 {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 192, 203, 0),
+    rgb(128, 0, 128, 1)
+  ); /* 0 indicates full transparency, 1 indicates full color (no transparency). */
+}
+
+.box8 {
+  width: 100%;
+  height: 200px;
+  background-image: repeating-linear-gradient(
+    palevioletred,
+    pink 10%,
+    purple 20%
+  );
+}

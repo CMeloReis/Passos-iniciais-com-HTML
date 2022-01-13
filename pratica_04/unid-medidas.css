@@ -30,6 +30,7 @@
 
 body {
   font-size: 10px;
+  margin: 0;
 }
 h1 {
   font-size: 3em;
@@ -73,4 +74,12 @@ html {
   width: 50%; /* do espaço disponível */
   height: 50%;
   background-color: palevioletred;
+}
+
+/* unidades de medidas relativas (viewport):Viewport é toda a área da página visível, a qual o usuário pode ver e usar.*/
+
+.box4 {
+  background-color: rgb(255, 102, 153);
+  height: 100vh; /* 100vh é 100% da altura do espaço disponível para o usuário */
+  width: 100vw; /* 100vh é 100% da largura do espaço disponível para o usuário */
 }
