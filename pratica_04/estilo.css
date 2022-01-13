@@ -57,3 +57,42 @@ arquivo externo -> style interno -> style inline = última propriedade a ser apl
  */
 /* Atribuições CSS INLINE são de execução prioritária, porém, é uma prática incorreta, pois dificulta a manutenção do código, 
 suja o mesmo e não permite reuso de classes CSS. */
+
+/* -------------------------------------------INHERIT------------------------------------------------- */
+/*INHERIT: Herda a propriedade do item acima.  */
+/* O inherit obriga a ter uma herança entre os elementos. Isso ocorre principalmente com fontes.  */
+
+.box {
+  font-size: 20px;
+  color: #f00;
+}
+
+h1 {
+  font-size: 30px;
+  /* color: #00f; */ /* comentado para testar o currentColor em #titulo */
+}
+
+.box h1 {
+  font-size: inherit; /* herda a propriedade dada no .box. para que a tag inserida em outra tag, receba propriedades da tag externa.*/
+  color: inherit;
+}
+
+/* -------------------------------------------CORES------------------------------------------------- */
+
+#cores {
+  margin: 0;
+  height: 100vh;
+  background-color: darkmagenta;
+  background-color: #a5fb7f; /* hexadecimal. vermelho, verde, azul. de 0-9 e depois de A-F */
+  background-color: rgb(35, 57, 123); /* rgb de 0 a 255 cada */
+  background-color: hsl(
+    300,
+    50%,
+    60%
+  ); /* hsl(tonalidade, saturação, luminosidade); 0 a 100%*/
+  color: green;
+}
+
+#titulo {
+  border: 2px solid currentColor;
+}

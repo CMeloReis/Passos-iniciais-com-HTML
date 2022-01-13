@@ -82,4 +82,5 @@ html {
   background-color: rgb(255, 102, 153);
   height: 100vh; /* 100vh é 100% da altura do espaço disponível para o usuário */
   width: 100vw; /* 100vh é 100% da largura do espaço disponível para o usuário */
+  /* A medida vh equivale-se a uma altura que seria 1/100 do viewpoint.  */
 }
