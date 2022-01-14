@@ -1,0 +1,41 @@
+body {
+  display: flex;
+}
+div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+@media (orientation: landscape) {
+  /* horizontal */
+  /* a função da propriedade Orientation no @media do CSS é verificar se a tela está horizontal ou vertical. */
+  body {
+    flex-direction: row;
+  }
+}
+@media (orientation: portrait) {
+  /* vertical */
+  body {
+    flex-direction: column;
+  }
+}
+@media (aspect-ratio: 1/1) {
+  /* aplicado apenas quando a tela estiver na proporção 1 para 1 (quadrado) */
+  /* O aspect-radio é usado para mudar as propriedades de acordo com a escala de tamanho do navegador 
+  que o usuário está acessando a página. */
+  body {
+    background-color: darkred;
+  }
+}
+@media (min-aspect-ratio: 2/1) {
+  /* 2/1 -> proporção entre largura e altura. largura = 2 x altura */
+  body {
+    background-color: darkblue;
+  }
+}
+@media (max-aspect-ratio: 1/2) {
+  body {
+    background-color: darkgreen;
+  }
+}
