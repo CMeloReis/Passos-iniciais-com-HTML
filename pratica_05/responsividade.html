@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-08">
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="viewport" content="width=device-width, user-scalable=no"> -->
+    <!-- usuário não poderá dar zoom.-->
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- user-scalable -> Ativa ou não a opção de zoom; initial-scale -> Regula o nível de zoom (escala inicial) -->
+</head>
+
+<body>
+    <h1>Responsividade</h1>
+    <p>O layout responde ao tamanho da tela.</p>
+    <p> Layout responsivo: Página que se adapta a qualquer tamanho de dispositivo. Ou seja, os elementos serão
+        organizados do menor ao maior tamanho.</p>
+    <h1>Mobile First</h1>
+    <p>Conceito de Mobile First: Fazer o desenvolvimento inicialmente pensando em telas de celular, para depois elas
+        serem pensadas para telas de desktop.</p>
+    <p>Contudo, o conceito evoluiu. Deve-se desenhar o site pensando na maior tela que irá abri-lo, pensando também
+        como irá se comportar na menor tela que o site irá aparecer.</p>
+
+    <!-- imagens pesquisadas no google -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="img2.jpg" /> <!-- o minimo de tamanho para que a imagem apareça. -->
+        <!-- em media coloca-se as condições para a imagem aparecer. -->
+        <source media="(min-width: 450px)" srcset="img3.jpg" />
+        <img src="img1.jpg" />
+    </picture>
+
+    <div>
+        <img src="img2.jpg" />
+    </div>
+
+</body>
+
+</html>
