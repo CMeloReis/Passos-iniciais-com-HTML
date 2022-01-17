@@ -1,5 +1,17 @@
+/* crlar variavéis para usar em todo o código (variáveis globais), colocando-as em :root{} */
+/* o uso de variáveis é importante no css pois permite usar o mesmo valor de uma propriedade em mais de um elemento. */
+:root {
+  --bg-color: violet;
+  --bg-second: #3939b8;
+  --font-color: #a745e9;
+  --font-size: 25px;
+}
+
 body {
   display: flex;
+  background-color: var(--bg-color);
+  color: whitesmoke;
+  font-size: var(--font-size);
 }
 div {
   width: 200px;
@@ -33,9 +45,35 @@ div {
   body {
     background-color: darkblue;
   }
+
+  :root {
+    --font-color: #e965a7;
+  }
 }
 @media (max-aspect-ratio: 1/2) {
   body {
     background-color: darkgreen;
+    color: var(--media-color);
+  }
+
+  :root {
+    --font-size: 15px; /* troca de valor da variável dentro do @media */
+    --font-color: #e965a7;
   }
 }
+
+h1 {
+  margin: auto;
+  color: var(
+    --font-color,
+    #00f
+  ); /* caso não tenha a variável será aplicado o valor setado */
+}
+
+.container {
+  background-color: var(--bg-second);
+}
+
+/* Qual a maneira correta de modificar uma variável de acodo com o media query no css? */
+/* Iniciamos um novo :root dentro do @media e colocamos a variável e o valor de acordo com o que queremos 
+para aquele @media. */
