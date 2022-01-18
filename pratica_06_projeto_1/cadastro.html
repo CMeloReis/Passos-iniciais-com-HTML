@@ -5,10 +5,75 @@
     <meta charset="UTF-8" />
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda&family=Shizuru&family=Tangerine&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
+    <h1>Área de Cadastro</h1>
+
+    <form action="minha-colecao.html" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Usuário: <br />
+                <input type="text" id="user" name="usuario" title="Nome de usuário" placeholder="Digite o usuário"
+                    value="" required />
+            </label>
+            <br />
+            <label>
+                E-mail: <br />
+                <input type="text" id="email" name="email" title="Endereço de e-mail" placeholder="Digite o e-mail"
+                    pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" value="@email.com" required />
+            </label>
+            <br />
+            <label>
+                Telefone: <br />
+                <input type="tel" id="phone" name="telefone" title="Número de telefone" placeholder="Digite o número" />
+            </label> <br />
+            <label>
+                Senha: <br />
+                <input type="password" id="password" name="senha" title="Senha de acesso" placeholder="Digite a senha"
+                    minlength="5" maxlength="15" required />
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Interesses</legend>
+            <label>Selecione suas preferências:</label> <br />
+            <label>
+                Forma de leitura: <br />
+                <input type="radio" name="leitura" /> Digital <br />
+                <input type="radio" name="leitura" /> Impresso <br />
+                <input type="radio" name="leitura" /> Ambos <br />
+            </label>
+            <br />
+            <label>
+                Colecionar livros, HQs, mangás ou outros: <br />
+                <input type="radio" name="colecao" /> Sim <br />
+                <input type="radio" name="colecao" /> Não <br />
+            </label>
+            <br />
+            <label>
+                Caso sua resposta seja sim, quais itens coleciona? <br />
+                <input type="checkbox" /> Livros <br />
+                <input type="checkbox" /> HQs <br />
+                <input type="checkbox" /> Mangás <br />
+                <input type="checkbox" /> Revistas <br />
+                <input type="checkbox" />
+                <input type="text" placeholder="Outros" /> <br />
+            </label>
+            <label>
+                Sinta-se livre para indicar suas obras preferidas: <br />
+                <textarea name="obras-preferidas" id=""></textarea>
+            </label>
+
+        </fieldset>
+        <input type="submit" value="Cadastrar" />
+    </form>
 
 </body>
 
