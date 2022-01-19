@@ -2,3 +2,121 @@
 font-family: 'Merienda', cursive;
 font-family: 'Shizuru', cursive;
 font-family: 'Tangerine', cursive; */
+
+:root {
+  --first-color: #608add;
+  --second-color: #e58fac;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-home {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  width: 400px;
+}
+
+#form-cadastro {
+  margin-right: auto;
+  margin-left: auto;
+  width: 700px;
+}
+
+label,
+div {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Merienda", cursive;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  font-size: 12px;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #9f9ff7;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+  padding: 10px;
+  font-size: 12px;
+  background-color: #fff;
+  width: 50%;
+  border-radius: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  border: 0px;
+  width: 10%;
+  height: 1.3em;
+}
+
+fieldset {
+  background-color: #b0b0ee;
+  margin-bottom: 20px;
+  border: 2px solid var(--first-color);
+  border-radius: 10px;
+}
+
+legend {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+textarea {
+  height: 200px;
+  width: 60%;
+  resize: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .form-home {
+    width: 200px;
+  }
+
+  #form-cadastro {
+    width: 400px;
+  }
+
+  label,
+  div {
+    font-size: 12px;
+  }
+}

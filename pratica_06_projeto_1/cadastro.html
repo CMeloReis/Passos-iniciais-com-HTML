@@ -14,7 +14,7 @@
 <body>
     <h1>Área de Cadastro</h1>
 
-    <form action="minha-colecao.html" method="post">
+    <form id="form-cadastro" action="acervo.html" method="post">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label>
@@ -44,35 +44,40 @@
         <fieldset>
             <legend>Interesses</legend>
             <label>Selecione suas preferências:</label> <br />
-            <label>
-                Forma de leitura: <br />
+            <label>Forma de leitura:</label>
+            <br />
+            <div>
                 <input type="radio" name="leitura" /> Digital <br />
                 <input type="radio" name="leitura" /> Impresso <br />
                 <input type="radio" name="leitura" /> Ambos <br />
-            </label>
+            </div>
             <br />
-            <label>
-                Colecionar livros, HQs, mangás ou outros: <br />
+            <label>Colecionar livros, HQs, mangás ou outros:</label>
+            <br />
+            <div>
                 <input type="radio" name="colecao" /> Sim <br />
                 <input type="radio" name="colecao" /> Não <br />
-            </label>
+            </div>
             <br />
-            <label>
-                Caso sua resposta seja sim, quais itens coleciona? <br />
+            <label>Caso sua resposta seja sim, quais itens coleciona?</label>
+            <br />
+            <div>
                 <input type="checkbox" /> Livros <br />
                 <input type="checkbox" /> HQs <br />
                 <input type="checkbox" /> Mangás <br />
                 <input type="checkbox" /> Revistas <br />
                 <input type="checkbox" />
-                <input type="text" placeholder="Outros" /> <br />
-            </label>
+                <input type="text" placeholder="Outros" />
+            </div>
+            <br />
+
             <label>
                 Sinta-se livre para indicar suas obras preferidas: <br />
                 <textarea name="obras-preferidas" id=""></textarea>
             </label>
 
         </fieldset>
-        <input type="submit" value="Cadastrar" />
+        <input type="submit" value="Salvar e Enviar" />
     </form>
 
 </body>

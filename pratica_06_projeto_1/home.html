@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta charset="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Acervo de livros e mangás</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merienda&family=Shizuru&family=Tangerine&display=swap"
         rel="stylesheet">
@@ -13,10 +13,9 @@
 
 <body>
 
-    <h1>Minha Coleção</h1>
-    <h3>Organize sua coleção de livros, mangás, HQs, entre outros. </h3>
+    <h1 id="titulo-home">Acervo de livros e mangás</h1>
 
-    <form action="minha-colecao.html" method="post">
+    <form class="form-home" action="acervo.html" method="post">
         <label>Já está cadastrado? É só fazer o login.</label> <br />
         <label>
             Usuário: <br />
@@ -28,11 +27,11 @@
             <input type="password" id="password" name="senha" title="Senha de acesso" placeholder="Digite a senha"
                 minlength="5" maxlength="15" required />
         </label> <br />
-        <input type="submit" value="Entrar em Minha Coleção" />
+        <input type="submit" value="Entrar no Acervo" />
     </form>
 
-    <form action="cadastro.html">
-        <label>Ainda não está cadastrado?</label> <br />
+    <form class="form-home" action="cadastro.html">
+        <label> Ainda não está cadastrado?</label>
         <input type="submit" value="Cadastrar" />
     </form>
 
