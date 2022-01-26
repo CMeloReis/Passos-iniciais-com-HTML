@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Título</title>
+    <script>/* Inserir código Javacript. Interno ou externo */</script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href=""> <!-- código css externo -->
+    <style>
+        /* código css interno */
+    </style>
+    <meta /> <!-- metadados. dados internos da página. quem criou, descrição do site, ...-->
+    <!-- <base href="https://www.meusite.com.br/" />  -->
+    <!-- referencia o endereço original do site. não obrigatório -->
+
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum <del>dolor</del> sit amet consectetur <small>adipisicing</small> elit. Quia ullam error, <br />
+        est magni aliquid doloribus?<sup>1</sup></p>
+    <p>Lorem ipsum <i>dolor</i> sit amet, consectetur adipisicing elit. <strong>Eius</strong>, vero?<sub>2</sub></p>
+
+    <pre>
+        Tudo que estiver dentro da tag pre será 
+        interpretado da forma que estiver escrita.
+
+        Lorem, ipsum.
+    </pre>
+
+    Lista não ordenada
+    <ul style="list-style-type:disc">
+        <!-- default -->
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ul>
+    <ul style="list-style-type:circle">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ul>
+    <ul style="list-style-type:square">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ul>
+    <ul style="list-style-type:none">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ul>
+
+    Lista ordenada
+    <ol type="1">
+        <!-- default -->
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ol>
+    <ol type="A">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ol>
+    <ol type="a">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ol>
+    <ol type="I">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ol>
+    <ol type="i">
+        <li>azul</li>
+        <li>amarelo</li>
+        <li>vermelho</li>
+    </ol>
+
+    <!-- Mesma pasta do index
+    <img src="imagem.jpg">
+    Imagem dentro de outra pasta
+    <img src="pasta1/pasta2/imagem.jpg">
+    Pasta anterior
+    <img src="../imagem.jpg"> -->
+    <img src="img2.jpg" alt="Cachorrinho fofo" title="Cachorrinho fofo" />
+    <br />
+    <a href="teste.html" target="_blank">Ir para a página de testes</a> <br />
+    <a href="documento.txt" download>Baixar documento</a>
+
+    <article>
+        <header>
+            <h2>Lorem, ipsum.</h2>
+            <p>Autor: A. Sier</p>
+        </header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum culpa voluptatem eius consectetur quaerat ex
+            tempora, enim, vitae nemo quam voluptate et. Nam doloremque asperiores eum quidem dicta quis.</p>
+    </article>
+    <footer>
+        <p>Postado por Alrac Sier</p>
+    </footer>
+
+    <h3>Tabelas</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Recife</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Uberlandia</td>
+            </tr>
+            <tr>
+                <td colspan="2">Cássio</td> <!-- mesclar colunas com o atributo colspan -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+</html>

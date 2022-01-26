@@ -1,0 +1,15 @@
+img {
+  width: 40vw;
+}
+
+table,
+th,
+td {
+  width: 40vw;
+  border: 1px solid #000;
+}
+
+th {
+  text-align: left;
+  background-color: #7fbbff;
+}
