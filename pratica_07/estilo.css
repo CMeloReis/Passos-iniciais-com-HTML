@@ -13,3 +13,9 @@ th {
   text-align: left;
   background-color: #7fbbff;
 }
+
+textarea{
+  width: 250px;
+  height: 150px;
+  resize: none;
+}

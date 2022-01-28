@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Título</title>
+    <meta name="description" content="descrição do site que irá aparecer nas buscas pela internet">
     <script>/* Inserir código Javacript. Interno ou externo */</script>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href=""> <!-- código css externo -->
@@ -29,7 +30,7 @@
         Lorem, ipsum.
     </pre>
 
-    Lista não ordenada
+    <h4>Lista não ordenada</h4>
     <ul style="list-style-type:disc">
         <!-- default -->
         <li>azul</li>
@@ -52,7 +53,7 @@
         <li>vermelho</li>
     </ul>
 
-    Lista ordenada
+    <h4>Lista ordenada</h4>
     <ol type="1">
         <!-- default -->
         <li>azul</li>
@@ -125,6 +126,46 @@
             </tr>
         </tbody>
     </table>
+
+    <h3>Formulários</h3>
+    <form method="get" action="teste.html">
+        <label>
+            Usuário: <br>
+            <input type="text" name="usuario" /> <br>
+        </label>
+        <label>
+            Senha: <br>
+            <input type="password" /> <br>
+        </label> <br>
+
+        <textarea name="campo"></textarea> <br>
+
+        <select name="opcoes">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+        </select>
+        <br>
+
+        <input type="radio" name="radio" value="1" /> Opção 1 <br>
+        <input type="radio" name="radio" value="2" /> Opção 2 <br>
+        <input type="radio" name="radio" value="3" /> Opção 3 <br>
+
+        <label>
+            <input type="checkbox">
+            Li e concordo com os <a href="teste.html">Termos de Uso</a> .
+        </label>
+
+        <br> <input type="submit">
+    </form>
+
+    <iframe src="https://b7web.com.br/mapa/" frameborder="0" width="500px" height="400px"></iframe>
+
+    <h3>Acionadores de evento</h3>
+    <img src="http://www.google.com.br/google.jpg" alt="" onclick="alert('Clicou!')" /> <!-- colocar javascript -->
+    <img src="http://www.google.com.br/google.jpg" alt="" onmouseover="alert('Massa passa por cima')" /> <!-- colocar javascript -->
+    <img src="http://www.google.com.br/google.jpg" alt="" onmouseout="alert('Mouse saiu de cima')" /> <!-- colocar javascript -->
+
 </body>
 
 
