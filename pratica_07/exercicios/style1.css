@@ -1,0 +1,17 @@
+.header {
+  background-color: #0000ff;
+  color: #fff;
+}
+.header p {
+  font-size: 30px;
+}
+.header > span {
+  font-size: 20px;
+}
+.header + div {
+  /* apenas na div logo após a classe header */
+  background-color: #ff0000;
+}
+strong {
+  color: #00ff00;
+}

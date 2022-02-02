@@ -1,0 +1,24 @@
+table {
+  width: 500px;
+  text-align: center;
+  font-size: 14px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+}
+
+.day {
+  text-align: left;
+}
+.yellow {
+  background-color: rgb(255, 255, 161);
+}
+.blue {
+  background-color: rgb(181, 164, 243);
+}
+.green {
+  background-color: rgb(138, 233, 138);
+}
