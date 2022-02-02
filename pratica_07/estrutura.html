@@ -18,7 +18,17 @@
 </head>
 
 <body>
-    <h1>Título</h1>
+
+    <div class="topo">
+        <h1>Título</h1>
+    </div>
+
+    <div class="menu"></div>
+    <div class="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+    <span>Texto da tag span. Não se define largura e altura, pois as medidas se adequam ao conteúdo.</span>
+
+    <br /><br />
     <p>Lorem, ipsum <del>dolor</del> sit amet consectetur <small>adipisicing</small> elit. Quia ullam error, <br />
         est magni aliquid doloribus?<sup>1</sup></p>
     <p>Lorem ipsum <i>dolor</i> sit amet, consectetur adipisicing elit. <strong>Eius</strong>, vero?<sub>2</sub></p>
@@ -29,57 +39,65 @@
 
         Lorem, ipsum.
     </pre>
+    <div>
+        <h4>Lista não ordenada</h4>
+        <ul style="list-style-type:disc">
+            <!-- default -->
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ul>
+        <span>
+            <!-- não está diretamento dentro da div (div > ul ) propriedade não será aplicada -->
+            <ul style="list-style-type:circle">
+                <li>azul</li>
+                <li>amarelo</li>
+                <li>vermelho</li>
+            </ul>
+            <ul style="list-style-type:square">
+                <li>azul</li>
+                <li>amarelo</li>
+                <li>vermelho</li>
+            </ul>
+        </span>
+        <ul style="list-style-type:none">
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ul>
+    </div>
 
-    <h4>Lista não ordenada</h4>
-    <ul style="list-style-type:disc">
-        <!-- default -->
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ul>
-    <ul style="list-style-type:circle">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ul>
-    <ul style="list-style-type:square">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ul>
-    <ul style="list-style-type:none">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ul>
-
+    <div class="ordenada">
     <h4>Lista ordenada</h4>
-    <ol type="1">
-        <!-- default -->
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ol>
-    <ol type="A">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ol>
-    <ol type="a">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ol>
-    <ol type="I">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ol>
-    <ol type="i">
-        <li>azul</li>
-        <li>amarelo</li>
-        <li>vermelho</li>
-    </ol>
+        <ol type="1">
+            <!-- default -->
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ol>
+        <ol type="A">
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ol>
+        <ol type="a">
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ol>
+        <ol type="I">
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ol>
+        <ol type="i">
+            <li>azul</li>
+            <li>amarelo</li>
+            <li>vermelho</li>
+        </ol>
+    </div>
+
+    <span>Lorem, ipsum dolor.</span>
 
     <!-- Mesma pasta do index
     <img src="imagem.jpg">
@@ -162,9 +180,13 @@
     <iframe src="https://b7web.com.br/mapa/" frameborder="0" width="500px" height="400px"></iframe>
 
     <h3>Acionadores de evento</h3>
-    <img src="http://www.google.com.br/google.jpg" alt="" onclick="alert('Clicou!')" /> <!-- colocar javascript -->
-    <img src="http://www.google.com.br/google.jpg" alt="" onmouseover="alert('Massa passa por cima')" /> <!-- colocar javascript -->
-    <img src="http://www.google.com.br/google.jpg" alt="" onmouseout="alert('Mouse saiu de cima')" /> <!-- colocar javascript -->
+    <img class="acionador" src="http://www.google.com.br/google.jpg" alt="" onclick="alert('Clicou!')" /> <br>
+    <!-- colocar javascript -->
+    <img class="acionador" src="http://www.google.com.br/google.jpg" alt=""
+        onmouseover="alert('Mouse passou pela imagem')" /> <br>
+    <img class="acionador" src="http://www.google.com.br/google.jpg" alt=""
+        onmouseout="alert('Mouse saiu de cima da imagem')" />
+
 
 </body>
 
