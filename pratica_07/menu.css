@@ -1,7 +1,9 @@
-.menu {
-  background-color: darkblue;
+* {
   margin: 0;
   padding: 0;
+}
+.menu {
+  background-color: darkblue;
 }
 
 .menu a {
@@ -22,4 +24,18 @@
   /* tira as bolinhas dos itens */
   display: inline-block;
   /* blocos em uma linha */
+}
+
+.submenu {
+  position: absolute; /* flutuante */
+  display: none;
+  min-width: 150px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu .menu li {
+  display: block;
 }
