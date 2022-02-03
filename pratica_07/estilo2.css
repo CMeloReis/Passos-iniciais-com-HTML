@@ -1,0 +1,43 @@
+div, span {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 5px;
+}
+
+/* position:
+static -> default; 
+absolute -> flutua. posição relativo ao anterior, caso não especifique o top; 
+relative -> posição como o static, mas dá para mudar a profundidade de alguns itens;
+*/
+
+.absolute {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+/* display:
+none -> o elemento não aparece no display/tela. o elemento não terá representação gráfica na tela;
+block -> é a representação padrão da div. elementos funcionam como bloco;
+inline -> padrão do span. se adapta ao contéudo que está dentro dele. dentro da linha;
+inline-block -> fica um ao lado do outro, mas também terá propriedades de bloco;
+*/
+
+span{
+  display: block;
+}
+
+.inline{
+  display: inline;
+}
+
+.inline-block{
+  display: inline-block;
+}

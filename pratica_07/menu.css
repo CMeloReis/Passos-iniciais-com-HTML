@@ -1,0 +1,25 @@
+.menu {
+  background-color: darkblue;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  /* expandir a área de clique */
+  color: #fff;
+  display: block;
+  padding: 10px;
+  /* a é um bloco, então pode setar um padding */
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #00008b;
+}
+
+.menu li {
+  list-style: none;
+  /* tira as bolinhas dos itens */
+  display: inline-block;
+  /* blocos em uma linha */
+}
