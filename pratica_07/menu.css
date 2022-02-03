@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* INÍCIO DO CSS DO MENU E DO SUBMENU */
 .menu {
   background-color: darkblue;
 }
@@ -38,4 +40,41 @@
 
 .submenu .menu li {
   display: block;
+}
+
+.submenu ul {
+  border-radius: 10px;
+  border-start-start-radius: unset;
+  border-start-end-radius: unset;
+}
+
+/* FIM INÍCIO DO CSS DO MENU E DO SUBMENU */
+
+/* FORMATAÇÃO DE TEXTO */
+.texto {
+  margin: auto; /* centraliza o elemento */
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: darksalmon;
+  border-radius: 10px;
+  color: #8b0000;
+  font-size: 18px;
+  font-family: Verdana;
+  /* normal, bold ou um número (200). algumas fontes não suportam os vários níveis(números) de negrito e 
+  não mostra diferença quando aplicado. */
+  font-weight: bold;
+  text-align: center; /* center, right, left, justify */
+  text-transform: capitalize; /* uppercase, lowercase, capitalize, initial */
+  text-decoration: underline;
+  text-shadow: -5px 4px 7px; /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+}
+
+.flutuante {
+  height: 100px;
+  position: fixed; /* absolute: flutuante. independente */
+  bottom: 0px;
+  right: 0px;
+  background-color: thistle;
 }
