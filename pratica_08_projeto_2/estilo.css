@@ -1,0 +1,45 @@
+/* Projeto didático com a plataforma B7Web */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo {
+  height: 50px;
+  background-color: #353535;
+}
+
+.topo-interior {
+  width: 1000px;
+  margin: auto;
+  color: #fff;
+}
+
+.logomarca {
+  float: left;
+  font-size: 24px;
+  line-height: 50px; /* para o texto ficar no meio */
+}
+
+.menu {
+  float: right;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 50px;
+  font-size: 14px;
+  cursor: pointer; /* na tag a é padrão */
+}
+
+.menu li:hover {
+  background-color: #3480c1;
+}

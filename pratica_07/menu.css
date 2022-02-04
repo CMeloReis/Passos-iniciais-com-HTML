@@ -19,6 +19,7 @@
 .menu a:hover {
   background-color: #fff;
   color: #00008b;
+  text-decoration: none;
 }
 
 .menu li {
@@ -77,4 +78,14 @@
   bottom: 0px;
   right: 0px;
   background-color: thistle;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00f;
+  text-decoration: underline;
 }
