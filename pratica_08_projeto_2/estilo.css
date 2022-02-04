@@ -10,7 +10,7 @@
   background-color: #353535;
 }
 
-.topo-interior {
+.topo-interno {
   width: 1000px;
   margin: auto;
   color: #fff;
@@ -42,4 +42,79 @@
 
 .menu li:hover {
   background-color: #3480c1;
+}
+
+.banner {
+  height: 300px;
+  background-color: #347aba;
+}
+
+.banner-interno,
+.conteudo-interno {
+  width: 1000px;
+  margin: auto;
+}
+
+.banner-esquerda {
+  float: left;
+}
+
+.banner-direita {
+  float: right;
+  height: 300px; /* colocar a altura por conta da imagem, que é aumentada pelo navegador, não passar do tamanho do banner */
+}
+.banner-direita img {
+  margin-right: 55px;
+}
+
+.frase1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 60px;
+  letter-spacing: 5px;
+}
+.frase2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.botao {
+  background-color: #ffc001;
+  width: 282px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 5px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.outros-produtos {
+  height: 90px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 90px;
+}
+
+.fotos img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rodape {
+  height: 50px;
+  background-color: #347aba;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  margin-top: 40px;
 }
