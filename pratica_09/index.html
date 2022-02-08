@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Semântica do HTML -->
+    <!--Tags Header, Footer e Nav, Section, Article, Aside e Time não têm função visual. 
+        Serve como identificação para o navegador. -->
+
+    <header>
+        <h1>Semântica</h1>
+        <p>Subtítulo</p>
+        <p>Resumo do site</p>
+    </header>
+    <nav>
+        Mais importante para a acessibilidade. Procurado por monitores especiais para cegos, pois já sabe que é um
+        lugar especifico sobre navegação do site. <br />
+        Os menus da página estarão na tag nav. Não precisa que todos os links do site ficaram aqui, mas é bom que o
+        menu principal esteja.
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+    </nav>
+    <section>
+        Separa conteúdos e pode ser usado em vários lugares da página.
+        Semanticamente as sections servem para agrupar conteúdos que são relacionados.
+    </section>
+    <main>
+        Conteúdo principal da página.
+    </main>
+    <article>
+        Informa ao motor de busca um conteúdo independente da página. um blog, um artigo, uma postagem, um gráfico
+        interativo na tela. Melhora o SEO.
+    </article>
+    <aside>
+        Interpretado como conteúdo secundário da página.
+    </aside>
+    Meu dia preferido é o <time datetime="2000-12-21">dia do meu aniversário</time>.
+    <!-- vai ser interpretado como uma referência a alguma data ou algum tempo -->
+    <h4>Validação com Inputs</h4>
+    <form action="teste.html" method="post">
+        <input type="search" name="search" placeholder="Buscar" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="url" name="url" placeholder="Url" required />
+        <input type="tel" name="tel" placeholder="Telefone" /> <!-- abre o teclado numérico no celular -->
+        <input type="number" name="" placeholder="" step="10" />
+        <input type="range" min="1" max="100" name="range" placeholder="" />
+        <input type="date" name="" placeholder="" />
+        <input type="submit" value="Enviar" />
+        <!-- placeholder: Atributo que serve para indicar ao navegador o texto que vai aparecer em um input; -->
+    </form>
+
+    <h4>Atributo data</h4>
+    <div data-nome="Ana" data-sobrenome="Silva" data-tipo-pagina="blog">Oi, tudo bem?</div>
+    <!-- O atributo data é um atributo customizado -->
+    <!-- pode guardar quakquer informação que seja útil-->
+    <!-- atributo data pode ser colocado dentro de qualquer tag, não apenas a tag div -->
+
+    <h4>Vídeo</h4>
+    <video src="video.mp4" type="video/mp4" width="320" height="240" controls autoplay muted></video>
+    <!-- controls: controles do vídeo
+        autoplay: entra na página, play no vídeo
+        preload: começa a carregar o vídeo assim que entra na página -->
+
+    <h4>Áudio</h4>
+    <audio src="audio.mp3" type="audio/mpeg" width="320" height="240" controls autoplay muted loop></audio>
+
+    <form action="teste.html" method="post" class="login"> <br>
+        <label>Usuário: <br>
+            <input type="text" name="usuario" placeholder="Digite o usuário" autofocus />
+            <!-- autofocus: cursor ativo automaticamente no campo de input -->
+        </label>
+        <br>
+        <label> Senha: <br>
+            <input type="password" name="password" placeholder="Digite a senha" />
+        </label>
+        <br>
+        <input type="submit" name="" id="" value="Enviar" />
+    </form>
+
+    <footer>
+        O footer o rodapé da página. Autor, data, termos de privacidade.
+    </footer>
+</body>
+
+</html>
