@@ -73,18 +73,26 @@
     <h4>Áudio</h4>
     <audio src="audio.mp3" type="audio/mpeg" width="320" height="240" controls autoplay muted loop></audio>
 
+    <h4>Formulário de Login</h4>
     <form action="teste.html" method="post" class="login"> <br>
         <label>Usuário: <br>
-            <input type="text" name="usuario" placeholder="Digite o usuário" autofocus />
-            <!-- autofocus: cursor ativo automaticamente no campo de input -->
+            <input type="text" name="usuario" placeholder="Digite o usuário" autofocus maxlength="10" required
+                autocomplete="off" />
+            <!-- autofocus: cursor ativo automaticamente no campo de input. -->
+            <!-- maxlength: limitar a quantidade de caracteres no input que poderá ser digitado. -->
+            <!-- required: o input será obrigatório para o envio de dados em um formulário -->
         </label>
         <br>
         <label> Senha: <br>
-            <input type="password" name="password" placeholder="Digite a senha" />
+            <input type="password" name="password" placeholder="Digite a senha" minlength="4" maxlength="10" required
+                autocomplete="off" />
         </label>
         <br>
         <input type="submit" name="" id="" value="Enviar" />
     </form>
+
+    <h4>Animação</h4>
+    <div class="animacao"></div>
 
     <footer>
         O footer o rodapé da página. Autor, data, termos de privacidade.
