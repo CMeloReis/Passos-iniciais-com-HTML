@@ -27,6 +27,12 @@
   }
 }
 
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   margin: 0;
 }
@@ -89,5 +95,60 @@ label {
   animation-name: animacao;
   animation-duration: 4s;
   animation-delay: 2s; /* tempo para iniciar a animação */
-  animation-iteration-count: 3; /* números de repetição; infinite: repetição infiinita */
+  animation-iteration-count: 2; /* números de repetição; infinite: repetição infiinita */
+}
+
+.shadow {
+  width: 150px;
+  height: 150px;
+  background-color: darkorange;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+  line-height: 150px;
+  box-shadow: 8px 8px 5px #888; /* horizontal, vertical, esfumaçamento, cor */
+  border-radius: 75px;
+  transition: all 1s linear; /* linear: mesma velocidade */
+}
+
+.shadow:hover {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  border-radius: 150px;
+  background-color: yellow;
+}
+
+.texto {
+  margin: 100px;
+  color: darkgreen;
+  font-size: 22px;
+  text-shadow: 2px 2px 3px #888;
+}
+
+.spinner {
+  margin: auto;
+  margin-bottom: 50px;
+  border: 8px solid rgb(0, 0, 0, 0.1);
+  border-left-color: pink;
+  border-radius: 90px;
+  width: 60px;
+  height: 60px;
+  animation: spinner 1s linear infinite;
+}
+
+a {
+  color: #000;
+  transition: all 1s linear;
+}
+a:hover {
+  color: #00f;
+}
+.longa {
+  margin: 20px;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #000;
+  word-wrap: break-word; /* quebra a palavra de acordo com o espaço disponível, ou seja, 
+  impede que o texto que uma determinada div possua estoure o comprimento dela*/
 }
