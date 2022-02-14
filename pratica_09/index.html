@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tag meta (social sharing)
+    Para funcionar a página precisa está online -->
+    <meta property="og:url" content="http://site.com.br" />
+    <meta property="og:type" content="article" /><!-- product, website (padrão), article (blog) -->
+    <meta property="og:title" content="Título do artigo" />
+    <meta property="og:description" content="Descrição do artigo" />
+    <meta property="og:image" content="link-da-imagem" /> <!-- 1200x630 -->
+
     <title>Estrutura</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,7 +51,12 @@
         Semanticamente as sections servem para agrupar conteúdos que são relacionados.
     </section>
     <main>
-        Conteúdo principal da página.
+        <pre>
+        Tag main
+        Conteúdo principal da página. Apenas uma tag main na página. 
+        Não colocar dentro de tags nav, header, aside, article ou footer. Pode ser dentro de uma tag section.
+        Conteúdo único da página. em outra página pode ter o mesmo cabeçalho, aside, mas o conteúdo main é diferente.
+        </pre>
     </main>
     <article>
         Informa ao motor de busca um conteúdo independente da página. um blog, um artigo, uma postagem, um gráfico
@@ -113,6 +127,29 @@
 
     <div class="longa">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         palavramuitomuitomuitomuitolonga</div>
+
+    <h4>Listas de descrição</h4>
+    <dl>
+        <dt>Mangá</dt>
+        <dd>História em quadrinhos produzidos no Japão.</dd>
+        <dt>Manhua</dt>
+        <dd>História em quadrinhos produzidos na China.</dd>
+        <dt>Manhwa</dt>
+        <dd>História em quadrinhos produzidos na Coreia do Sul.</dd>
+    </dl>
+
+    <h4>Citação</h4>
+    <!-- tags usadas para citações no HTML semântico -->
+    <p>
+        Como Isaac Newton disse: <q>O que sabemos é uma gota; o que ignoramos é um oceano.</q>
+    </p>
+    <p>
+        Como dito no Lorem:
+    <blockquote cite="link-da-referencia-da-citacao">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odit quaerat earum omnis cumque tempore,
+        porro aut cum, a sit similique, veritatis recusandae aliquam fugit facilis eos accusamus corporis quis?
+    </blockquote>
+    </p>
 
     <footer>
         O footer o rodapé da página. Autor, data, termos de privacidade.

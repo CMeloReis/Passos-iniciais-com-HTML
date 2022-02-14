@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #da4979;
+  min-height: 100px;
+}
+
+section {
+  display: flex;
+  min-height: 600px;
+}
+
+aside {
+  width: 200px;
+  background-color: #da779c;
+}
+
+main {
+  flex: 1;
+  background-color: #ffc0cb;
+}
+
+footer {
+  background-color: #da4979;
+  min-height: 100px;
+}
+
+address,
+a {
+  color: #ffc0cb;
+  font-style: normal;
+  text-decoration: none;
+}
+
+figure {
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+figcaption {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+}

@@ -2,27 +2,27 @@
 @keyframes animacao {
   0% {
     background-color: darkcyan;
-    top: 800px;
+    top: 1100px;
     left: 0;
   }
   25% {
     background-color: darkblue;
-    top: 800px;
+    top: 1100px;
     left: 500px;
   }
   50% {
     background-color: darkmagenta;
-    top: 1000px;
+    top: 1300px;
     left: 500px;
   }
   75% {
     background-color: darkorchid;
-    top: 1000px;
+    top: 1300px;
     left: 0;
   }
   100% {
     background-color: darkred;
-    top: 800px;
+    top: 1100px;
     left: 0;
   }
 }
@@ -91,7 +91,7 @@ label {
   height: 150px;
   background-color: darkred;
   position: absolute;
-  top: 1000px;
+  top: 1100px;
   animation-name: animacao;
   animation-duration: 4s;
   animation-delay: 2s; /* tempo para iniciar a animação */
@@ -151,4 +151,9 @@ a:hover {
   border: 1px solid #000;
   word-wrap: break-word; /* quebra a palavra de acordo com o espaço disponível, ou seja, 
   impede que o texto que uma determinada div possua estoure o comprimento dela*/
+}
+
+q {
+  color: #555;
+  font-style: italic;
 }
