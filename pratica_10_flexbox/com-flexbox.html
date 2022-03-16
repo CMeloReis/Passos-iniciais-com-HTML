@@ -5,54 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-flexbox.css">
     <title>Com Flexbox</title>
-    <style>
-        .container,
-        .container2 {
-            display: flex;
-            /* flexbox - direção padrão horizontal */
-            flex-direction: row;
-            /* padrão */
-            /* row, row-reverse, column, column-reverse */
-            background-color: #DDD;
-            margin: 10px;
-            flex-wrap: wrap; /* nowrap é o padrão. não vai para a linha de baixo */
-            /* passa para a linha de baixo, caso necessário */
-        }
-
-        .div1 {
-            flex: 1;
-            background-color: #ff8c00;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .div2 {
-            flex: 1;
-            background-color: #ff8c00;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .div3 {
-            flex: 2;
-            background-color: #ff8c00;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        .container2 div {
-            background-color: #ff8c00;
-            /* flex: 1; */
-            width: 200px;
-            margin: 10px;
-            padding: 10px;
-            font-size: 18px;
-        }
-    </style>
 </head>
 
 <body>
@@ -73,7 +27,13 @@
         <div>4</div>
         <div>5</div>
         <div>6</div>
-        <div>7</div>
+    </div>
+
+    <div class="container3">
+        <div>1 order 0</div>
+        <div class="order">2 order -1</div>
+        <div class="div-self">3 order 0</div>
+        <div>4 order 0</div>
     </div>
 
 </body>

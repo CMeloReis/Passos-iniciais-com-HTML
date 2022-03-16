@@ -1,0 +1,74 @@
+/* http://flexboxfroggy.com/ -: jogo para praticar flexbox */
+
+.container,
+.container2 {
+  display: flex;
+  /* flexbox - direção padrão horizontal */
+
+  /* flex-direction: row; padrão Outros:  row, row-reverse, column, column-reverse*/
+  /* flex-wrap: wrap; assa para a linha de baixo, caso necessário. ex: quando definido um width.
+            nowrap é o padrão. não vai para a linha de baixo */
+  flex-flow: row wrap;
+  /* propriedade única para o flex-direction e o flex-wrap */
+  background-color: #ddd;
+  margin: 10px;
+}
+
+.div1 {
+  flex: 1;
+  background-color: #ff8c00;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.div2 {
+  flex: 1;
+  background-color: #ff8c00;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.div3 {
+  flex: 2;
+  background-color: #ff8c00;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.container2 div,
+.container3 div {
+  background-color: #008c8c;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.container3 div {
+  background-color: #e9967a;
+  width: 100px;
+  height: 100px;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: center; /* alinha na direção que está sendo exibida */
+  /* center, flex-start, flex-end, space-around */
+  align-items: flex-end; /* alinha na direção contrária que está sendo exibida. se horizontal, alinnha na vertical*/
+  /* center, flex-start, flex-end, space-around */
+  background-color: #ddd;
+  margin: 10px;
+}
+
+.div-self {
+  align-self: flex-start;
+}
+
+.order {
+  order: -1; /* padrão = order: 0; */
+}
