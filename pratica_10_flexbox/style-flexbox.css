@@ -6,7 +6,7 @@
   /* flexbox - direção padrão horizontal */
 
   /* flex-direction: row; padrão Outros:  row, row-reverse, column, column-reverse*/
-  /* flex-wrap: wrap; assa para a linha de baixo, caso necessário. ex: quando definido um width.
+  /* flex-wrap: wrap; passa para a linha de baixo, caso necessário. ex: quando definido um width.
             nowrap é o padrão. não vai para a linha de baixo */
   flex-flow: row wrap;
   /* propriedade única para o flex-direction e o flex-wrap */
